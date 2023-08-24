@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes textrainbow {
+            0% {
+                text-shadow: 0 0 white
+            }
+            50%{
+                text-shadow: 0 0 rgba(255,255,255,0), -45px -45px 90px red, -30px -30px 90px orange, -15px -15px 90px yellow, 0 0 90px green, 15px 15px 90px blue, 30px 30px 90px indigo, 45px 45px 90px violet;
+            }
+            100% {
+                text-shadow: 0 0 rgba(255,255,255,0), -45px -45px 0 red, -30px -30px 0 orange, -15px -15px 0 yellow, 0 0 0 green, 15px 15px 0 blue, 30px 30px 0 indigo, 45px 45px 0 violet;
+            }
+        }
+
+        
+
+        .hey {
+            text-align: center;
+            font-size: 30px;
+            background-color: lightgray;
+            animation: textrainbow 1s ease-out 0s infinite alternate;
+            display: inline-block;
+            padding: 40px 40px 40px 40px;
+            border: 1px red solid;
+            transition: 2s ease-in-out;
+        }
+        .hey:hover {
+            border: 3px pink solid;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <a href="https://i.pinimg.com/474x/57/80/4d/57804d3d79f0b20dc404885b16587a06.jpg"><button class="hey">Button :D</button></a>
+</body>
+</html>   
